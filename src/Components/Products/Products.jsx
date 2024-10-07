@@ -29,7 +29,7 @@ function Products() {
       let { data } = await axios.get(
         `https://api.escuelajs.co/api/v1/products`
       );
-
+      console.log(data);
       setproducts(data);
       setError("");
       setLoading(false);
