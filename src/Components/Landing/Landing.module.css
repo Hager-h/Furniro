@@ -1,0 +1,157 @@
+.land {
+  background-image: url("../../images/land.png");
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 70px);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+}
+
+.land .text {
+  width: 600px;
+  height: 390px;
+  top: 70px;
+  right: 63px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  background-color: #fff3e3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 33px;
+  justify-content: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.btn {
+  padding: 20px 72px 20px 72px;
+  background: #b88e2f;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 20px 0px;
+  width: 222px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #6b5114;
+}
+
+.btn {
+  text-align: left;
+}
+
+.firstp {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.h2 {
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+  text-align: left;
+  color: #b88e2f;
+  margin-bottom: 10px;
+}
+
+.secp {
+  color: #333333;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 540px) {
+  .land {
+    justify-content: center;
+  }
+
+  .land .text {
+    width: 90%;
+    margin: 0 auto;
+    height: 409px;
+    top: 104px;
+    right: 27px;
+  }
+}
+
+@media (max-width: 470px) {
+  .secp {
+    font-size: 16px;
+  }
+
+  .h2 {
+    font-size: 30px;
+  }
+
+  .land .text {
+    height: 428px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .land .text {
+    right: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .land .text {
+    width: 353px;
+    right: 17px;
+  }
+}
+
+@media (max-width: 376px) {
+  .land .text {
+    width: 348px;
+
+    right: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .land .text {
+    right: 7px;
+  }
+}
+
+@media (max-width: 345px) {
+  .land .text {
+    width: 326px;
+    right: 8px;
+  }
+
+  .h2 {
+    font-size: 25px;
+  }
+
+  .secp {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,99 @@
+.room {
+  background: #fcf8f3;
+
+  height: 670px;
+  margin: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roomp {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  max-width: 422px;
+  margin: 10px 0px;
+}
+
+.paragraph {
+  color: #616161;
+
+  max-width: 368px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.buttonroom {
+  color: #ffffff;
+  width: 176px;
+  height: 48px;
+  background-color: #b88e2f;
+  color: #ffffff;
+  margin: 18px 0px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #b88e2f;
+  transition: all 0.36s ease;
+  cursor: pointer;
+}
+
+.buttonroom:hover {
+  color: #b88e2f;
+  background-color: #ffffff;
+  border: 1px solid #b88e2f;
+}
+.textRoom {
+  padding: 10px;
+  text-align: left;
+
+  width: 50%;
+
+  padding: 0px 20px 0px 90px;
+}
+
+@media (max-width: 1024px) {
+  .textRoom {
+    width: 67%;
+  }
+
+  .roomp {
+    max-width: 100%;
+  }
+}
+@media (max-width: 853px) {
+  .textRoom {
+    width: 97%;
+  }
+}
+@media (max-width: 1024px) {
+  .room {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 0px;
+  }
+
+  .textRoom {
+    margin: 30px 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .textRoom {
+    padding: 0;
+    width: 73%;
+  }
+
+  .roomp {
+    font-size: 28px;
+  }
+}

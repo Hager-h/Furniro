@@ -1,0 +1,108 @@
+.signin {
+  margin-top: 75px;
+}
+.signinInput {
+  width: 80%;
+}
+.signinInput input {
+  border: none;
+  border-bottom: 1px solid #9f9f9f;
+  height: 40px;
+  width: 100%;
+  font-weight: 600;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #636363;
+  border-radius: 0px;
+  padding-left: 0;
+}
+.flexDiv .signInput::placeholder {
+  font-size: 38px;
+  font-weight: bolder;
+}
+.textSign {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.textSign p {
+  margin: 10px 0px;
+}
+.allDivs2 {
+  align-items: start;
+  padding: 70px 40px;
+}
+
+.right2 img {
+  height: auto;
+  border-radius: 12px;
+  max-width: 100%;
+}
+.linkSign {
+  color: #b88e2f;
+  font-weight: bolder;
+}
+
+.messageWrongT {
+  width: 82%;
+  color: #000000fa;
+  font-weight: 600;
+  background: #fdce659e;
+  padding: 14px;
+  margin-top: -28px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1170px) {
+  .right2 img {
+    max-width: 94%;
+  }
+}
+@media (max-width: 1024px) {
+  .right2,
+  .left2 {
+    width: 100%;
+  }
+  .allDivs2 {
+    gap: 25px 0px;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+  }
+
+  .textSign p {
+    max-width: 100%;
+  }
+
+  .right2,
+  .left2 {
+    align-items: center;
+  }
+}
+@media (max-width: 540px) {
+  .allDivs2 {
+    padding: 70px;
+  }
+}
+@media (max-width: 470px) {
+  .allDivs2 {
+    margin-top: 115px;
+    padding: 75px 41px;
+  }
+  .allDivs2 img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .textSign p {
+    max-width: 230px;
+  }
+}
+@media (max-width: 345px) {
+  .allDivs2 {
+    padding: 70px 25px;
+  }
+}

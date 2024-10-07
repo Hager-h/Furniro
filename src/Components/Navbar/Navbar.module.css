@@ -1,0 +1,413 @@
+:root {
+  --main-color: #c5a254;
+}
+
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  background-color: white;
+
+  padding: 20px 70px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: 80px;
+}
+
+.show {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.alllink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ulLinks ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  margin-left: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 140px;
+}
+
+.icons a {
+  margin-right: 35px;
+}
+
+.ulLinks ul li {
+  margin-right: 30px;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+
+.logotext {
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41.45px;
+  text-align: left;
+}
+
+.close {
+  display: none;
+}
+
+.activeimg {
+  display: none;
+}
+
+.ulLinks ul li a {
+  color: #000000;
+  margin-right: 10px;
+
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.ulLinks ul li a:after {
+  content: "";
+  position: absolute;
+  width: 57%;
+  height: 2px;
+  background-color: var(--main-color);
+  top: 25px;
+  left: 1px;
+  display: none;
+}
+
+.ulLinks ul li a:hover::after {
+  display: block;
+}
+
+.ulLinks ul li a:hover {
+  color: var(--main-color);
+}
+
+.ulLinks ul li a.active {
+  color: var(--main-color);
+}
+
+.active img {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(72%) saturate(600%)
+    hue-rotate(8deg) brightness(102%) contrast(93%);
+}
+
+.ulLinks ul li a.active::after {
+  display: block;
+}
+
+.alllink {
+  background-color: transparent;
+}
+
+.alllink.active {
+  right: 0px;
+}
+
+.ulLinks .icons li a:hover::after,
+.ulLinks .icons li a.active::after {
+  display: none;
+}
+
+.ulLinks .icons li a:hover,
+.ulLinks .icons li a.active {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(72%) saturate(600%)
+    hue-rotate(8deg) brightness(102%) contrast(93%);
+}
+
+.icons li a {
+  filter: brightness(0) saturate(100%);
+}
+
+.cartDiv {
+  position: relative;
+  color: #000000;
+}
+
+.cartDiv:active {
+  color: #000000;
+}
+
+.cartCircle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d70000;
+  color: #fff;
+  top: -18px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.cartDiv img {
+  cursor: pointer;
+}
+
+.cartDiv img {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(0%);
+  transition: filter 0.3s ease;
+}
+
+.cartDiv img:hover {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(72%) saturate(600%)
+    hue-rotate(8deg) brightness(102%) contrast(93%);
+}
+
+.imageActive {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(72%) saturate(600%)
+    hue-rotate(8deg) brightness(102%) contrast(93%);
+}
+
+.Active .cartDiv img {
+  filter: brightness() saturate(100%) invert(51%) sepia(72%) saturate(0%)
+    brightness(102%) contrast(93%);
+}
+
+@media (max-width: 1168px) {
+  .cartCircle {
+    top: -18px;
+    left: 16px;
+    font-weight: 400;
+    padding-bottom: 4px;
+    font-size: 18px;
+  }
+
+  .ulLinks ul {
+    margin-left: 29px;
+  }
+
+  .ulLinks ul li {
+    margin-right: 12px;
+    position: relative;
+  }
+}
+
+@media (max-width: 1024px) {
+  .alllink {
+    z-index: 1000;
+    background-color: white;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -333px;
+    border-left: 2px solid #ddd;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.2s;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  .ulLinks ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-direction: column;
+    padding: 20px 25px;
+    margin-top: 46px;
+  }
+
+  .ulLinks ul li a {
+    font-size: 8px;
+  }
+
+  .alllink {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .ulLinks ul li {
+    margin-right: 0px;
+  }
+
+  .icons {
+    margin-left: 10px;
+  }
+
+  .activeimg {
+    display: block;
+  }
+
+  .show {
+    display: block;
+    width: 60px;
+  }
+
+  .ulLinks ul {
+    margin-top: 100px;
+  }
+
+  .header {
+    padding: 20px 45px;
+  }
+
+  .ulLinks ul li {
+    margin-bottom: 28px;
+  }
+
+  .ulLinks ul li a:after {
+    width: 100%;
+
+    top: 38px;
+  }
+
+  .ulLinks ul li a {
+    font-size: 20px;
+  }
+
+  .close {
+    font-size: 27px;
+
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+    color: #020101;
+    position: absolute;
+    top: 13px;
+    left: 221px;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  .mobile i {
+    font-size: 20px;
+    margin: 0px 12px;
+    cursor: pointer;
+    color: #000000;
+  }
+
+  .mobile i:hover,
+  .close:hover {
+    color: var(--main-color);
+  }
+
+  .header {
+    padding: 20px 44px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .ulLinks {
+    margin-top: -100px;
+    text-align: center;
+  }
+
+  .icons {
+    flex-direction: column-reverse;
+  }
+
+  .ulLinks ul {
+    margin-top: 20px;
+  }
+
+  .show {
+    width: 100px;
+  }
+}
+
+@media (max-width: 857px) {
+  .ulLinks ul {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logotext {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 24px;
+  }
+
+  .icons img {
+    width: 24px;
+  }
+
+  .icons a {
+    margin-right: 20px;
+  }
+
+  .show {
+    display: block;
+    width: 60px;
+  }
+
+  .ulLinks ul {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .header {
+    padding: 15px 34px;
+  }
+}
+
+.alllink.active {
+  right: 0px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40000;
+  pointer-events: all;
+}

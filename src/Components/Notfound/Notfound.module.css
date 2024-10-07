@@ -1,0 +1,15 @@
+.notFound{
+    width: 100%;
+    background-image: url(../../images/foun.webp);
+    background-size: 55%;
+    background-position:  center bottom 15px;
+    background-repeat: no-repeat;
+
+  
+    height: 100vh;
+    position: relative;
+
+
+  
+  
+}

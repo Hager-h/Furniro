@@ -1,0 +1,249 @@
+.shopCart {
+  margin-top: 200px;
+  position: fixed;
+  z-index: 60000;
+  top: 0;
+  left: 0;
+  height: 540px;
+}
+
+.shoppingcart {
+  width: 370px;
+  height: 540px;
+  background-color: #ffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  z-index: 60000;
+  box-shadow: 1px 1px 2px rgb(59, 55, 55);
+}
+
+.titleShopping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px;
+  width: 100%;
+}
+.titleShopping h2 {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+.titleShopping:after {
+  content: "";
+  width: 287px;
+  height: 1px;
+  background-color: #d9d9d9;
+  top: 77px;
+  position: absolute;
+  left: 38px;
+}
+.shoppingProd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  width: 100%;
+}
+.shoppingName {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  flex-direction: column;
+}
+.prodShoppingImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+.shoppingName {
+  width: 136px;
+  height: 56px;
+}
+.shoppingName h3 {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.shoppingName p {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+.shoppingName .priceSpan {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #b88e2f;
+}
+.close {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.close:hover {
+  color: #b88e2f;
+}
+.shoppingSubtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: -124px;
+}
+
+.shoppingSubtotal p:first-of-type {
+  padding: 10px 0px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.shoppingSubtotal p:last-of-type {
+  color: #b88e2f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+
+  padding: 10px 0px;
+}
+
+.buttonsShopping {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0px 10px;
+}
+.buttonsShopping button {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonsShopping button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.buttonsShopping button:nth-child(1) {
+  width: 80px;
+  height: 30px;
+}
+.buttonsShopping button:nth-child(2) {
+  width: 110px;
+  height: 30px;
+}
+.buttonsShopping button:nth-child(3) {
+  width: 111px;
+  height: 30px;
+}
+
+.emptyShopping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.emptyShopping p {
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 30px 0px 10px 0px;
+}
+.emptyShopping img {
+  width: 130px;
+}
+.emptyShopping button {
+  width: 120px;
+  background-color: #b88e2f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0px;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s ease;
+  border: 1px solid #b88e2f;
+  cursor: pointer;
+  margin: 30px 0px;
+}
+
+.emptyShopping button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #b88e2f;
+}
+
+.bottomShop {
+  position: absolute;
+  bottom: 5px;
+}
+
+.containerShop {
+  height: 300px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.containerShop::-webkit-scrollbar {
+  width: 8px;
+}
+
+.containerShop::-webkit-scrollbar-thumb {
+  background-color: #b88e2f;
+  border-radius: 10px;
+}
+
+.containerShop::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media (max-width: 360px) {
+  .shoppingcart {
+    width: 340px;
+  }
+}
+
+@media (max-width: 330px) {
+  .buttonsShopping {
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
+
+  .shoppingSubtotal {
+    margin-top: -124px;
+    padding: 0px 20px;
+  }
+  .shoppingcart {
+    width: 300px;
+  }
+}

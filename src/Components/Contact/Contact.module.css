@@ -1,0 +1,289 @@
+.contact {
+  padding-top: 75px;
+}
+
+.allDivs {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: start;
+  padding: 70px 120px;
+
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.allDivs h3 {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: left;
+}
+
+.allDivs p {
+  color: #9f9f9f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.right,
+.left {
+  display: flex;
+  justify-content: start;
+
+  align-items: start;
+  width: calc(100% / 2);
+}
+
+.left {
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 34px 0px;
+}
+
+.contactDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px 0px;
+  margin: 70px auto;
+}
+
+.contactDiv h3 {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: center;
+}
+
+.contactDiv p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #9f9f9f;
+  max-width: 644px;
+  margin: 0 auto;
+}
+
+.iconDiv {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0px 24px;
+}
+
+.textDiv {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 9px 0px;
+}
+
+.iconDiv img {
+  width: 22px;
+}
+
+.iconDiv p:first-of-type {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+
+.iconDiv p:nth-child(2),
+.iconDiv p:nth-child(3) {
+  margin-top: -8px;
+
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  max-width: 212px;
+}
+
+.iconDiv p:nth-child(3) {
+  margin-top: -10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 45px 0px;
+  width: 100%;
+}
+
+.flexDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0px;
+}
+
+.flexDiv label {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.flexDiv input {
+  height: 75px;
+  width: 100%;
+  padding-left: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #636363;
+}
+
+.flexDiv .inputMsg {
+  height: 120px;
+  border: 1px solid #9f9f9f;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid #9f9f9f;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #636363;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+.submitButton {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #b88e2f;
+  width: 237px;
+  height: 55px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #b68e2f;
+}
+
+.messageWrong,
+.errMsg {
+  color: #000000fa;
+  font-weight: 600;
+  background: #fdce659e;
+  padding: 14px;
+  margin-top: -28px;
+  border-radius: 10px;
+}
+
+.sucessMsg {
+  color: white;
+  font-weight: bold;
+  background: #b88e2f;
+
+  padding: 14px;
+  margin-top: -20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 925px) {
+  .allDivs {
+    padding: 70px 77px;
+  }
+}
+
+@media (max-width: 853px) {
+  .input::placeholder {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .allDivs {
+    gap: 65px 0px;
+    justify-content: center;
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  .right,
+  .left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .flexDiv .input {
+    max-width: 100%;
+  }
+
+  .inputMsg {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .allDivs {
+    padding: 70px 44px;
+  }
+
+  .contactDiv p {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .contactDiv p {
+    font-size: 12px;
+
+    max-width: 627px;
+    padding: 0px 20px;
+  }
+
+  .contactDiv h3 {
+    font-size: 26px;
+  }
+
+  .allDivs {
+    padding: 5px 28px 22px 28px;
+
+    gap: 65px 0px;
+  }
+
+  .right,
+  .left {
+    width: 100%;
+  }
+
+  .flexDiv .input {
+    max-width: 100%;
+  }
+
+  .inputMsg {
+    max-width: 100%;
+  }
+}
