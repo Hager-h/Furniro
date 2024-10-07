@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ClickContext } from "../../Context/Clickcontext";
 function About() {
-  let { handleLinkClick,        toggleMenu,isOpen
+  let { handleLinkClick,        
   } = useContext(ClickContext);
 
   const responsive = {
