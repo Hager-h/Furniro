@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className={style.home}>
       <Landing />
-      {/* <Browse/> */}
+      <Browse/>
       {/* <Featuredproducts/> */}
       {/* <Rooms/> */}
       {/* <Beforefooter/> */}
