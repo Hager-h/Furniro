@@ -159,6 +159,7 @@
 .cartDiv {
   position: relative;
   color: #000000;
+  order: 1;
 }
 
 .cartDiv:active {
@@ -244,7 +245,7 @@
     border-radius: 20px 0px 0px 20px;
   
    
-    box-shadow: 0 10px 15px #c5a254, 0 4px 6px #c5a254;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
   
   }
 
