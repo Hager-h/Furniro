@@ -27,9 +27,9 @@ function Cart() {
 
   const handleshop = () => {
     navigate("/shop");
-    {
+    
       window.scrollTo(0, 0);
-    }
+    
     handleLinkClick("/shop");
   };
 
