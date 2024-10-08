@@ -349,9 +349,7 @@
     text-align: center;
   }
 
-  .icons {
-    flex-direction: column-reverse;
-  }
+
 
   .ulLinks ul {
     margin-top: 20px;
