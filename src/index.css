@@ -138,6 +138,10 @@ a{
   -webkit-tap-highlight-color: transparent;
 
 }
+i{
+  -webkit-tap-highlight-color: transparent;
+
+}
 button{
   -webkit-tap-highlight-color: transparent;
 }
