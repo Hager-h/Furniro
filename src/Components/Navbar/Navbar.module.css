@@ -245,7 +245,7 @@
   
    
     box-shadow: 0 10px 15px #c5a254, 0 4px 6px #c5a254;
-  }
+  
   }
 
   .mobile {
@@ -363,7 +363,7 @@
   .show {
     width: 100px;
   }
-
+}
 
 @media (max-width: 857px) {
   .ulLinks ul {
