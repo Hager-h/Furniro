@@ -90,7 +90,7 @@ console.log(data)
                   }
                   alt={product.title}
                 />{" "}
-                <h4 className={styles.h4}>{product.title.slice(0, 14)}</h4>
+                <h4 className={styles.h4}>{product.title.slice(0, 16)}</h4>
                 <h6 className={styles.category}>{product.category.name}</h6>
                 <div className={styles.flex}>
                   <p className={styles.price}>
