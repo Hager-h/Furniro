@@ -171,12 +171,11 @@
 
 @media (max-width: 470px) {
   .slider {
-    /* width: 385px; */
     width: 350px;
   }
 
   .arrow {
-    left: -33%;
+    left: -9%;
   }
 }
 
@@ -184,5 +183,7 @@
   .slider {
     width: 333px;
   }
- 
+  .arrow {
+    left: -11%;
+  }
 }
