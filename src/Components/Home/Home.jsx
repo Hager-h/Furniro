@@ -9,10 +9,10 @@ function Home() {
   return (
     <div className={style.home}>
       <Landing />
-      <Browse/>
-      <Featuredproducts/>
-      <Rooms/>
-      <Beforefooter/>
+      {/* <Browse/> */}
+      {/* <Featuredproducts/> */}
+      {/* <Rooms/> */}
+      {/* <Beforefooter/> */}
     </div>
   )
 }
