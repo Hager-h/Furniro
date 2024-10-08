@@ -216,7 +216,8 @@
   }
 
   .ulLinks ul {
-    margin-left: 29px;
+      margin-left: 76px;
+  
   }
 
   .ulLinks ul li {
@@ -241,6 +242,10 @@
     -ms-transition: 0.3s;
     -o-transition: 0.2s;
     border-radius: 20px 0px 0px 20px;
+  
+   
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
   }
 
   .mobile {
