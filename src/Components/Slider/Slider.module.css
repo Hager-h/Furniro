@@ -176,7 +176,7 @@
   }
 
   .arrow {
-    left: -8%;
+    left: -33%;
   }
 }
 
@@ -184,7 +184,5 @@
   .slider {
     width: 333px;
   }
-  .arrow {
-    left: -11%;
-  }
+ 
 }
