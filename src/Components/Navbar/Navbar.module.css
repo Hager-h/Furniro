@@ -208,7 +208,7 @@
 }
 
 .cartDiVImg img{
-  margin-right: 17px;
+  margin-right: 24px;
 }
 @media (max-width: 1168px) {
   .cartCircle {
@@ -234,9 +234,9 @@
   .alllink {
 
       background-color: #fff;
-      border-left: 8px solid #af8717a8;
+      border-left: 8px solid #b9b3a3a8;
       border-radius: 20px 0 0 20px;
-      box-shadow: 3px 4px 7px #b88e2f, 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 3px 4px 7px #060604, 0 4px 8px rgba(0, 0, 0, 0.1);
       height: 100vh;
       position: fixed;
       right: -333px;
@@ -248,6 +248,7 @@
       -o-transition: .2s;
       width: 280px;
       z-index: 1000;
+  
   
   
   }

@@ -94,6 +94,8 @@
   }
 }
 
+
+
 @media (max-width: 470px) {
   .commSpecial {
     padding: 0;
@@ -104,4 +106,18 @@
     gap: 28px 0px;
     height: 466px;
   }
+  .textCommParag {
+   
+    font-size: 16px;
+  
+}
+.textCommTitle {
+  
+  font-size: 22px;
+
+}
+.imageCom{
+  height: 50px;
+  width: 50px;
+}
 }
