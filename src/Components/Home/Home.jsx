@@ -11,8 +11,8 @@ function Home() {
       <Landing />
       <Browse/>
       <Featuredproducts/>
-      {/* <Rooms/> */}
-      {/* <Beforefooter/> */}
+      <Rooms/>
+      <Beforefooter/>
     </div>
   )
 }
