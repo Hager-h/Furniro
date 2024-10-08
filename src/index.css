@@ -146,6 +146,6 @@ img{
 
 @media (max-width: 540px) {
   body {
-    overflow: hidden; 
+    overflow-x: hidden; 
   }
 }
