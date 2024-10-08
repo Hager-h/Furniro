@@ -157,11 +157,10 @@
   .inputs {
   
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-.email, .sub {
+/* .email, .sub {
 
   width: 77%;
   margin-bottom: 20px;
-}
+} */
 }

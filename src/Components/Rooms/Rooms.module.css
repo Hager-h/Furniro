@@ -89,8 +89,8 @@
 
 @media (max-width: 540px) {
   .textRoom {
-    padding: 0;
-    width: 90%;
+      padding: 0px 20px;
+      width: 90%;
     margin: 20px auto;
   }
 
