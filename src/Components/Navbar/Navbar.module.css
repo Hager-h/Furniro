@@ -206,7 +206,10 @@
   filter: brightness() saturate(100%) invert(51%) sepia(72%) saturate(0%)
     brightness(102%) contrast(93%);
 }
-
+.cartDiVImg{
+  position: relative;
+  right: 3px;
+}
 .cartDiVImg img{
   margin-right: 24px;
 }
