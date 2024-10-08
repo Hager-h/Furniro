@@ -130,9 +130,13 @@ body {
 }
 li {
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
+
 }
 a{
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+
 }
 button{
   -webkit-tap-highlight-color: transparent;
