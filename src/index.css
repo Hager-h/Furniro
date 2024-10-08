@@ -142,10 +142,14 @@ img{
   -webkit-tap-highlight-color: transparent;
 
 }
-
-
 @media (max-width: 540px) {
-  body {
+  html, body {
     overflow-x: hidden; 
   }
+
+
+* {
+  max-width: 100vw; 
+  box-sizing: border-box; 
+}
 }
