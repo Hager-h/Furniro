@@ -8,7 +8,7 @@ import Beforefooter from '../Beforefooter/Beforefooter.jsx'
 function Home() {
   return (
     <div className={style.home}>
-      <Landing />
+      {/* <Landing />م */}
       {/* <Browse/> */}
       {/* <Featuredproducts/> */}
       {/* <Rooms/> */}
