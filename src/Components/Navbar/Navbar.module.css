@@ -271,6 +271,10 @@
 
   .icons {
     margin-left: 10px;
+      flex-direction: column;
+      gap: 22px 0px;
+      justify-content: center;
+  
   }
 
   .activeimg {

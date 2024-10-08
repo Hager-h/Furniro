@@ -10,8 +10,8 @@ function Home() {
     <div className={style.home}>
       <Landing />
       <Browse/>
-      {/* <Featuredproducts/> */}
-      {/* <Rooms/> */}
+      <Featuredproducts/>
+      <Rooms/>
       {/* <Beforefooter/> */}
     </div>
   )
