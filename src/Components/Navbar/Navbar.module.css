@@ -213,6 +213,11 @@
 .cartDiVImg img{
   margin-right: 24px;
 }
+.cartDiv{
+    position: relative;
+    right: 12px;
+
+}
 @media (max-width: 1168px) {
   .cartCircle {
     top: -18px;
