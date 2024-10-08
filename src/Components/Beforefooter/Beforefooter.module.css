@@ -89,4 +89,9 @@
     .beforPTwo {
         font-size: 31px;
     }
+
+    .allImages {
+        flex-direction: column;
+        padding: 0px 42px 0px 0px;
+    }
 }
