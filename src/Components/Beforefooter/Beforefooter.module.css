@@ -75,6 +75,11 @@
         flex-wrap: wrap;
     }
 }
+@media (max-width: 540px) {
+    body {
+      overflow-x: hidden; 
+    }
+  }
 
 @media(max-width:550px) {
 
