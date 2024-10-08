@@ -207,6 +207,9 @@
     brightness(102%) contrast(93%);
 }
 
+.cartDiVImg{
+  margin-right: 15px;
+}
 @media (max-width: 1168px) {
   .cartCircle {
     top: -18px;
