@@ -15,7 +15,7 @@ import emptyCart from "../../images/empty.png";
 import { Bars } from "react-loader-spinner";
 
 function Cart() {
-  const { cartItems, removeFromCart } = useShoppingCart();
+  const { cartItems, setCartItems, removeFromCart } = useShoppingCart();
 
   let { handleLinkClick } = useContext(ClickContext);
 
@@ -52,6 +52,21 @@ function Cart() {
 
   useEffect(() => {
     getData();
+  }, [cartItems]);
+
+  useEffect(() => {
+    const savedCartItems = localStorage.getItem("cartItems");
+    if (savedCartItems) {
+      setCartItems(JSON.parse(savedCartItems));
+    }
+  }, [setCartItems]);
+
+  useEffect(() => {
+    if (cartItems.length > 0) {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+      localStorage.removeItem("cartItems");
+    }
   }, [cartItems]);
 
   const calculateSubtotal = () => {

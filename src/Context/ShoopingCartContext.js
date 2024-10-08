@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState,useEffect } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
 export let ShoppingCartContext = createContext({});
@@ -6,9 +6,23 @@ export let ShoppingCartContext = createContext({});
 export default function ShoppingCartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
-  const getItemQuantity = (id) => {
-    return cartItems.find((item) => item.id === id)?.quantity || 0;
-  };
+
+
+  useEffect(() => {
+    const savedCartItems = localStorage.getItem("cartItems");
+    if (savedCartItems) {
+      setCartItems(JSON.parse(savedCartItems));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (cartItems.length > 0) {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    } else {
+      localStorage.removeItem("cartItems"); 
+    }
+  }, [cartItems]);
+
 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
@@ -49,11 +63,11 @@ export default function ShoppingCartProvider({ children }) {
   return (
     <ShoppingCartContext.Provider
       value={{
-        // getItemQuantity,
         increaseCartQuantity,
         removeFromCart,
         cartQuantity,
         cartItems,
+        setCartItems
       }}
     >
       {children}
