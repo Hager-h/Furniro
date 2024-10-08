@@ -74,13 +74,8 @@
     .allImages {
         flex-wrap: wrap;
     }
-}
-@media (max-width: 540px) {
-    body {
-      overflow-x: hidden; 
-    }
-  }
 
+}
 @media(max-width:550px) {
 
 
@@ -89,8 +84,14 @@
     }
 }
 
+@media (max-width: 540px) {
+    body {
+      overflow-x: hidden; 
+    }
+  
 
-@media(max-width:550px) {
+
+
     .beforPTwo {
         font-size: 31px;
     }
@@ -100,3 +101,15 @@
         padding: 0px 60px 0px 0px;
     }
 }
+@media (max-width: 540px) {
+    body {
+      overflow-x: hidden; 
+    }
+  }
+
+  @media(max-width:470px){
+    .middleImg{
+       margin: 18px 214px 18px 5px; 
+
+    }
+  }

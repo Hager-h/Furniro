@@ -27,8 +27,7 @@ function Beforefooter() {
           </div>
         </div>
 
-        <div className={style.middleImg} style={{margin:"18px 214px 18px 5px"
-}}>
+        <div className={style.middleImg} >
           <img src={middle} alt="" />
         </div>
 
