@@ -121,14 +121,8 @@
 
 
 
-
-/* @media (max-width: 470px) {
-  .textRoom {
-    padding: 0;
-    width: 73%;
-  }
-
-  .roomp {
-    font-size: 28px;
-  }
-} */
+ @media (max-width: 470px) {
+  .arrow {
+    left: -29%;
+}
+} 
