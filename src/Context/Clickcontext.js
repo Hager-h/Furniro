@@ -15,9 +15,11 @@ function ClickcontextProvider(props) {
     const handleLinkClick = (link) => {
         setActiveLink(link);
         window.scrollTo(0, 0);
-        toggleMenu()
+        if (isOpen) {
+          toggleMenu();
 
     };
+  }
     
     return (
         <ClickContext.Provider value={{ activeLink, setActiveLink,handleLinkClick,isOpen,toggleMenu }}>
