@@ -121,3 +121,10 @@
   width: 50px;
 }
 }
+
+@media(max-width:400px){
+  .commPartwo{
+   padding:  29px 10px 29px 43px;
+
+  }
+}
