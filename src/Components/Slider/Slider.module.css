@@ -156,6 +156,21 @@
   }
 }
 
+
+@media(max-width:768px){
+  .boxArrow {
+   
+    left: 270px;
+   
+  }
+  
+  .box {
+  
+  left: 53px;
+  
+  }
+}
+
 @media (max-width: 540px) {
   .slider {
     width: 404px;
