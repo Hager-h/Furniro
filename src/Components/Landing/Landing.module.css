@@ -91,7 +91,19 @@
 }
  .Landing_text{
  
-  right: 31px;
+  right: 29px;
+
+}
+
+.boxArrow {
+   
+  left: 270px;
+ 
+}
+
+.box {
+
+left: 53px;
 
 }
 }
@@ -111,17 +123,6 @@
 
 
 
-  .boxArrow {
-   
-    left: 270px;
-   
-}
-
-.box {
-  
-  left: 53px;
-
-}
 
 
    
