@@ -150,7 +150,7 @@ img{
   -webkit-tap-highlight-color: transparent;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 540px) {
   html, body {
     overflow-x: hidden; 
   }
