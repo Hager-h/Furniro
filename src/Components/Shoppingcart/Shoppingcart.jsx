@@ -8,19 +8,21 @@ import emptyCart from "../../images/empty.png";
 import { Bars } from "react-loader-spinner";
 import { ShoppingCartContext } from "../../Context/ShoopingCartContext";
 import { useContext } from "react";
-import image9 from "../../images/image.png"
+import image9 from "../../images/image.png";
 import { ClickContext } from "../../Context/Clickcontext";
-function Shoppingcart({ setIsCartOpen, isCartOpen,setIsCart, }) {
+function Shoppingcart({ setIsCartOpen, isCartOpen, setIsCart }) {
   const { cartItems, removeFromCart } = useContext(ShoppingCartContext);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  let {  handleLinkClick } = useContext(ClickContext);
+  let { handleLinkClick } = useContext(ClickContext);
 
   const getData = async () => {
     try {
-      let { data } = await axios.get(`https://api.escuelajs.co/api/v1/products`);
+      let { data } = await axios.get(
+        `https://api.escuelajs.co/api/v1/products`
+      );
       setProducts(data);
       setError("");
       setLoading(false);
@@ -48,65 +50,63 @@ function Shoppingcart({ setIsCartOpen, isCartOpen,setIsCart, }) {
     }, 0);
   };
 
-
-
-
-  
   return (
     <div className={style.shopCart}>
       <div className={style.shoppingcart}>
         <div className={style.titleShopping}>
           <h2>Shopping Cart</h2>
-          <img className={style.close} src={shopping} alt="shopping cart" onClick={() => { setIsCartOpen(!isCartOpen) }} />
+          <img
+            className={style.close}
+            src={shopping}
+            alt="shopping cart"
+            onClick={() => {
+              setIsCartOpen(!isCartOpen);
+            }}
+          />
         </div>
         <div className={style.containerShop}>
-
           {cartItems.length > 0 ? (
-
             cartItems.map((item) => {
               const product = products.find((prod) => prod.id === item.id);
               if (!product) {
-                return (
-                  <div key={item.id}>
-                    <Bars height="40" width="100" color="#c5a254" visible={true} />
-                  </div>
-                );
+                return null;
               }
 
-              return (
-
+              return loading ? (
+                <div key={item.id}>
+                  <Bars
+                    height="40"
+                    width="100"
+                    color="#c5a254"
+                    visible={true}
+                  />
+                </div>
+              ) : (
                 <div className={style.shoppingProd} key={item.id}>
                   <img
                     className={style.prodShoppingImg}
                     src={
-                      product.images[0].startsWith('["') || product.images[0].startsWith('"')
+                      product.images[0].startsWith('["') ||
+                      product.images[0].startsWith('"')
                         ? image9
                         : product.images.length < 2
                         ? image9
                         : product.images[0]
-                    
-                 
-                      
                     }
                     alt={product.title}
                   />
                   <div className={style.shoppingName}>
-                    <h3>
-                      {product.title.slice(0, 12)}
-
-                    </h3>
+                    <h3>{product.title.slice(0, 12)}</h3>
                     <p>
-                      {item.quantity} x  <span style={{margin:"0px 5px"}}></span>
-                      
-                      
-                      
+                      {item.quantity} x{" "}
+                      <span style={{ margin: "0px 5px" }}></span>
                       <span className={style.priceSpan}>
-  Rs.{
-    product.price.toString().length > 3 
-    ? product.price.toFixed(2)  
-    : product.price + ".000"    
-  }
-</span>                    </p>
+                        Rs.
+                        {product.price.toString().length > 3
+                          ? product.price.toFixed(2)
+                          : product.price + ".000"}
+                      </span>{" "}
+                    </p>
                   </div>
                   <img
                     className={style.close}
@@ -114,42 +114,49 @@ function Shoppingcart({ setIsCartOpen, isCartOpen,setIsCart, }) {
                     alt=""
                     onClick={() => removeFromCart(item.id)}
                   />
-
                 </div>
-
               );
             })
-
           ) : (
             <div className={style.emptyShopping}>
               <p>Your Cart Is Empty</p>
               <img src={emptyCart} alt="empty cart" />
-              <button onClick={() => {
-                navigate("/shop")
+              <button
+                onClick={() => {
+                  navigate("/shop");
 
-                window.scrollTo(0, 0);
-                setIsCartOpen(false)
-                handleLinkClick("/shop")
-              }
-              }> Shop Now</button>
+                  window.scrollTo(0, 0);
+                  setIsCartOpen(false);
+                  handleLinkClick("/shop");
+                }}
+              >
+                {" "}
+                Shop Now
+              </button>
             </div>
           )}
         </div>
 
         <div className={style.bottomShop}>
-          {cartItems.length > 0 ?
+          {cartItems.length > 0 ? (
             <div className={style.shoppingSubtotal}>
               <p>Subtotal</p>
               <p>Rs.{calculateSubtotal().toFixed(2)}</p>
-            </div> : ""}
-          <div className={style.buttonsShopping} style={{ marginBottom: "20px" }}>
+            </div>
+          ) : (
+            ""
+          )}
+          <div
+            className={style.buttonsShopping}
+            style={{ marginBottom: "20px" }}
+          >
             <button
               onClick={() => {
-                setIsCart(true)
+                setIsCart(true);
 
                 navigate("/cart");
                 window.scrollTo(0, 0);
-                setIsCartOpen(false)
+                setIsCartOpen(false);
               }}
             >
               Cart
@@ -158,7 +165,7 @@ function Shoppingcart({ setIsCartOpen, isCartOpen,setIsCart, }) {
               onClick={() => {
                 navigate("/checkout");
                 window.scrollTo(0, 0);
-                setIsCartOpen(false)
+                setIsCartOpen(false);
               }}
             >
               Checkout
