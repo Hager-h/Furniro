@@ -85,6 +85,16 @@
     max-width: 100%;
     margin: auto;
   }
+  .browsep {
+   
+    font-size: 18px;
+   
+}
+.title h2 {
+ 
+  font-size: 29px;
+  
+}
 }
 
 @media(max-width:440px){
