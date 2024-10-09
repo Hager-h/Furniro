@@ -101,7 +101,9 @@
 
 
 @media(max-width:699px){
-
+  .land {
+    justify-content: center;
+  }
  .Land .text{
  position: absolute;
   right: 29px;
@@ -115,9 +117,7 @@
 
 
 @media (max-width: 540px) {
-  .land {
-    justify-content: center;
-  }
+ 
 
   .land .text {
     width: 90%;
