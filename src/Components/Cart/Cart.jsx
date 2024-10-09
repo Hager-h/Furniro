@@ -100,24 +100,27 @@ function Cart() {
                   </tr>
                 </thead>
                 <tbody>
-                  {cartItems.map((item) => {
+                {loading ? (
+    <tr>
+      <td colSpan="5">
+        <Bars
+          height="40"
+          width="100"
+          color="#c5a254"
+          ariaLabel="loading-indicator"
+          visible={true}
+        />
+      </td>
+    </tr>
+  )
+
+                  :cartItems.map((item) => {
                     const product = products.find(
                       (prod) => prod.id === item.id
                     );
                     if (!product) {
-                      return (
-                        <tr key={item.id}>
-                          <td>
-                            <Bars
-                              height="40"
-                              width="100"
-                              color="#c5a254"
-                              ariaLabel="loading-indicator"
-                              visible={true}
-                            />
-                          </td>
-                        </tr>
-                      );
+                      return null
+                    
                     }
 
                     return (
