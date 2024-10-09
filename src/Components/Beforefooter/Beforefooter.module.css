@@ -116,3 +116,16 @@
         margin: 65px 0 100px;
     }
   }
+  @media(max-width:400px){
+
+    .beforP {
+       
+        font-size: 17px;
+       
+    }
+
+    .beforPTwo {
+        font-size: 27px;
+    }
+
+  }
