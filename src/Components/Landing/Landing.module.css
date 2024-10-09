@@ -18,7 +18,6 @@
   height: 390px;
   top: 70px;
   right: 63px;
-  gap: 0px;
   border-radius: 10px;
   background-color: #fff3e3;
   position: absolute;
@@ -85,15 +84,17 @@
 }
 
 @media(max-width:768px){
+
+  .Land .text{
+ 
+    right: 29px;
+  
+  }
   body {
     overflow-x: hidden; 
   
 }
- .Land .text{
- 
-  right: 29px;
 
-}
 
 
 }
