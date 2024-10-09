@@ -84,6 +84,13 @@
   margin-bottom: 10px;
 }
 
+@media(max-width:768px){
+  body {
+    overflow-x: hidden; 
+  
+}
+}
+
 @media (max-width: 540px) {
   .land {
     justify-content: center;
@@ -97,10 +104,7 @@
     right: 27px;
   }
 
-    body {
-      overflow-x: hidden; 
-    
-  }
+   
 }
 
 @media (max-width: 470px) {
