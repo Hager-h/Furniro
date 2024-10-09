@@ -98,6 +98,21 @@
 
 }
 
+
+@media(max-width:640px){
+
+ .Land .text{
+ 
+  right: 29px;
+
+}
+
+
+}
+
+
+
+
 @media (max-width: 540px) {
   .land {
     justify-content: center;
