@@ -89,6 +89,11 @@
     overflow-x: hidden; 
   
 }
+ .Landing_text{
+ 
+  right: 31px;
+
+}
 }
 
 @media (max-width: 540px) {
@@ -103,6 +108,21 @@
     top: 104px;
     right: 27px;
   }
+
+
+
+  .boxArrow {
+   
+    left: 270px;
+   
+}
+
+.box {
+  
+  left: 53px;
+
+}
+
 
    
 }
