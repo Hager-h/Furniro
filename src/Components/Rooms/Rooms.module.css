@@ -91,7 +91,20 @@
 
 
 
+@media(max-width:620px){
+  .box {
+ 
+    left: 112px;
+  
+    width: 159px;
+}
 
+.seconSlideP{
+
+  font-size: 19px;
+
+}
+}
 
 
 
