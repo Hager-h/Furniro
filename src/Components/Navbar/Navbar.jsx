@@ -138,8 +138,8 @@ export default function Navbar() {
                 <li className={style.cartDiv}>
                   <div
                     onClick={toggleCart}
-                    className={` cartDiVImg${isCart ? style.imageActive : ""}`}
-                  >
+                    className={`${isCart ? style.imageActive : ""} ${isCartOpen ? style.imageActive : ""}`}
+                    >
                     <img src={cartimg} alt="cart-image"  />
                   </div>
                   {cartQuantity > 0 && (
