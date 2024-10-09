@@ -63,7 +63,7 @@ function About() {
             />
           ))}
         </Carousel>
-        ;
+        
       </div>
 
       <Link
