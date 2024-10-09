@@ -141,7 +141,7 @@ function Cart() {
                             />
 
                             <span className={style.spanTitle}>
-                              {product.title.slice(0, 12)}
+                              {product.title.slice(0, 9)}
                             </span>
                           </div>
                         </td>
