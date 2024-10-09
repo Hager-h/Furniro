@@ -157,23 +157,11 @@
 }
 
 
-@media(max-width:768px){
-  .boxArrow {
-   
-    left: 270px;
-   
-  }
-  
-  .box {
-  
-  left: 53px;
-  
-  }
-}
+
 @media(max-width:620px){
   .box {
  
-    left: 90px;
+    left: 50px;
   
     width: 200px;
 }
@@ -185,6 +173,10 @@
 .seconSlideP{
 
   font-size: 19px;
+
+}
+.boxArrow{
+  left: 251px;
 
 }
 }
