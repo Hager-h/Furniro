@@ -27,7 +27,7 @@ function Commonparttwo() {
       </div>
 
       <div className={`${style.comm} ${style.commSpecial}`}>
-        <div className={style.imageCom}>
+      <div className={style.imageCom}>
           <img src={comm3} alt="" />
         </div>
         <div className={style.textComm}>

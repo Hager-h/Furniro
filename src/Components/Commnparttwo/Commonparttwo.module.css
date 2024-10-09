@@ -6,7 +6,7 @@
   overflow: hidden;
 
   width: 100%;
-  padding: 0px 10px 0px 90px;
+  padding: 10px 10px 10px 90px;
 
   margin-top: 30px;
   display: flex;
@@ -20,13 +20,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0px 12px;
+  gap: 0px 6px;
+  box-sizing: border-box;
 }
 
 .imageCom {
   width: 60px;
   height: 60px;
-  padding: 0px 3.61px 0px 3.61px;
+  padding: 0px 3px 0px 3px;
 }
 
 .textComm {
@@ -57,10 +58,17 @@
   width: 267px;
   height: 30px;
 }
-
+.commSpecial{
+  padding-left: 15px;
+  margin-right: -50px;
+}
 @media (max-width: 1024px) {
+  .commSpecial{
+    margin-right: 0;
+    padding-left: 0;
+  }
   .commPartwo {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
@@ -76,8 +84,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 370px;
-
+    height: auto;
+gap:  40px 0px;
     flex-wrap: wrap;
   }
 }
@@ -90,15 +98,17 @@
 
 @media (max-width: 768px) {
   .commPartwo {
-    padding: 0px;
-  }
+    padding: 27px 10px;
+    gap: 43px 0px;
+}
 }
 
 
 
 @media (max-width: 470px) {
   .commSpecial {
-    padding: 0;
+    padding-left: 0;
+    margin-right: 0;
   }
 
   .commPartwo {
