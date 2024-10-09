@@ -133,8 +133,9 @@
   margin: 14px 0;
 
 }
-.land{
-  height: calc(100vh - 30px);
+.text{
+  height: 406px;
+
 }
 }
 
