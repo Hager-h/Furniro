@@ -113,7 +113,24 @@
 
 }
 
+@media(max-width:630px){
+  .land .text {
+   
+    width: 528px;
+}
+.h2 {
+  font-size: 43px;
+ 
+}
 
+.firstp {
+  font-size: 16px;
+  
+}
+
+
+
+}
 
 
 @media (max-width: 540px) {
