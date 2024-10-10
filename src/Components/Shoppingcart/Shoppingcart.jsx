@@ -96,7 +96,7 @@ function Shoppingcart({ setIsCartOpen, isCartOpen, setIsCart }) {
                     alt={product.title}
                   />
                   <div className={style.shoppingName}>
-                    <h3>{product.title.slice(0, 12)}</h3>
+                    <h3>{product.title.slice(0, 9)}</h3>
                     <p>
                       {item.quantity} x{" "}
                       <span style={{ margin: "0px 5px" }}></span>
