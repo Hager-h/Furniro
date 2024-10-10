@@ -54,20 +54,20 @@ function Cart() {
     getData();
   }, [cartItems]);
 
-  useEffect(() => {
-    const savedCartItems = localStorage.getItem("cartItems");
-    if (savedCartItems) {
-      setCartItems(JSON.parse(savedCartItems));
-    }
-  }, [setCartItems]);
+  // useEffect(() => {
+  //   const savedCartItems = localStorage.getItem("cartItems");
+  //   if (savedCartItems) {
+  //     setCartItems(JSON.parse(savedCartItems));
+  //   }
+  // }, [setCartItems]);
 
-  useEffect(() => {
-    if (cartItems.length > 0) {
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    } else {
-      localStorage.removeItem("cartItems");
-    }
-  }, [cartItems]);
+  // useEffect(() => {
+  //   if (cartItems.length > 0) {
+  //     localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  //   } else {
+  //     localStorage.removeItem("cartItems");
+  //   }
+  // }, [cartItems]);
 
   const calculateSubtotal = () => {
     if (!cartItems || cartItems.length === 0 || products.length === 0) {

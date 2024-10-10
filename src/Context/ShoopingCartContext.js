@@ -8,12 +8,12 @@ export default function ShoppingCartProvider({ children }) {
 
 
 
-  useEffect(() => {
-    const savedCartItems = localStorage.getItem("cartItems");
-    if (savedCartItems) {
-      setCartItems(JSON.parse(savedCartItems));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedCartItems = localStorage.getItem("cartItems");
+  //   if (savedCartItems) {
+  //     setCartItems(JSON.parse(savedCartItems));
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (cartItems.length > 0) {
